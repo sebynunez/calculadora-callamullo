@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="acciones.js"></script>
+    <title>Primer clase callamullo</title>
+</head>
+<body>
+    
+    <form action="" name="calculadora">
+
+        <div class="resultado-bar">
+        <input type="text" name="texto" value="0" disabled id="resultado">
+        </div>
+        <input class="operador-out" type="button" value="C" id="borrar">
+        <div class="botones">
+        <input class="num" type="button" name="nums" value="7" onclick="ope(this.value)">
+        <input class="num" type="button" name="nums" value="8" onclick="ope(this.value)">
+        <input class="num" type="button" name="nums" value="9" onclick="ope(this.value)">
+        <input class="operador" type="button" name="calcu" value="/" onclick="div()">
+        <input class="num" type="button" name="nums" value="4" onclick="ope(this.value)">
+        <input class="num" type="button" name="nums" value="5" onclick="ope(this.value)">
+        <input class="num" type="button" name="nums" value="6" onclick="ope(this.value)">
+        <input class="operador" type="button" name="calcu" value="*" onclick="multi()">
+        <input class="num" type="button" name="nums" value="1" onclick="ope(this.value)">
+        <input class="num" type="button" name="nums" value="2" onclick="ope(this.value)">
+        <input class="num" type="button" name="nums" value="3" onclick="ope(this.value)">
+        <input class="operador" type="button" name="calcu" value="-"  onclick="resta()">
+        <input class="igual" type="button" name="igual" value="=" onclick="div()">
+        <input class="num" type="button" name="nums" value="0" onclick="ope(this.value)">
+        <input class="num" type="button" name="nums" value="." onclick="ope(this.value)">
+        <input class="operador" type="button" name="calcu" value="+"  onclick="suma()">
+        <!-- <input type="button" name="borrar" value="C" onclick="div()"> -->
+            </div>
+
+
+
+    </form>
+
+</body>
+</html>

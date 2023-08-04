@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh; /*alto de la pantalla*/
+    width: 100%;  /* ancho de la pantalla */
+    display: flex; 
+    justify-content: center; /* contenido centrado */
+    align-items: center; /* centramos los items */
+    background-color: #4e4e4e; /* color de fondo de la pagina */
+}
+
+form{
+    height: 600px;
+    width: 400px;
+    background-color: #1d1d1d;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+
+.resultado-bar{
+    height: 150px;
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; /* centra los items */
+    padding: 0 1rem;
+    box-sizing: border-box; /* cuanto es total de los margenes de la pantalla */
+}
+
+#resultado{
+    font-size: 90px; /* tamaño de la fuente  */
+    max-width: 400px; /* ancho maximo de la barra de resultados */
+    padding-top: 90px; 
+    margin-right: -16px;
+    margin-bottom: 10px;
+    padding-top: 20px; ;
+    background-color:#1d1d1d ; /* color de fondo de la barra de resultado */
+    text-align: right; /* ponemos el numero de muestra en la parte derecha */
+}
+
+.botones{
+    height: 390px; /* alto que van a ocupar todos los botones */
+    width: 100%; /*utilizamos el 100% del contenedor de la caluladora*/
+    display: grid; /*convertimos a tipo grid*/
+    justify-content: center; /* contenido centrado */
+    grid-template-columns: repeat(4, 97.6px);  /*cantidad de cuadros por columna y el tamaño*/
+    grid-gap: 3px;  /*es el ancho de las lineas de separacion*/
+}
+
+input{
+    font-size: 30px; /* tamaño de letra */
+    color: white; /* color de letra */
+    border: none; /* quitamos el borde */
+}
+
+input:focus{ /*la pseudoclase focus sirve para que se realice una accion cuando hagamos click sobre tal propiedad o cuando apretemos una tecla, ej: tab*/
+    outline: none; /*sin estilo de contorno*/
+    border-color: #111111; /*cambia de color cuando seleccionamos*/
+}
+
+input:hover{
+    filter: brightness(130%); /*le damos más brillo a los botones cuando pasemos por encima  */
+}
+
+.operador{
+    background-color: #181818; 
+}
+
+.operador-out{
+    width: 100%;
+    height: 60px;
+    background-color: #181818;
+    margin-bottom: 3px; /* margen inferior de los operadores */
+}
+
+.num{
+    background-color: #111111;;
+}
+
+.igual{
+    background-color: rgba(167, 110, 4, 0.541); /* le cambio el color de fondo del boton a un color dorado */
+}
